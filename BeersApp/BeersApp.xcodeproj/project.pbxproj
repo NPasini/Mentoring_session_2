@@ -1,0 +1,878 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A879C74E28BEB76F00D63554 /* Date+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879C74D28BEB76F00D63554 /* Date+Helpers.swift */; };
+		A879C75028BEB84900D63554 /* DateFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879C74F28BEB84900D63554 /* DateFilterView.swift */; };
+		A879C75628BFD77100D63554 /* BeersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879C75528BFD77100D63554 /* BeersViewController.swift */; };
+		A879C75A28C6233700D63554 /* FilteredBeersLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879C75928C6233700D63554 /* FilteredBeersLoaderPresentationAdapter.swift */; };
+		A879C75E28C77E4800D63554 /* BEERS_WITH_DATE_FILTER.png in Resources */ = {isa = PBXBuildFile; fileRef = A879C75D28C77E4700D63554 /* BEERS_WITH_DATE_FILTER.png */; };
+		A879C76028C781C100D63554 /* UIToolbar+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879C75F28C781C100D63554 /* UIToolbar+Helpers.swift */; };
+		A879C76228C782FF00D63554 /* BeersAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879C76128C782FF00D63554 /* BeersAcceptanceTests.swift */; };
+		A879C76428C783BF00D63554 /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879C76328C783BF00D63554 /* HTTPClientStub.swift */; };
+		A879C7A528C883E500D63554 /* BeerDetailsHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879C7A428C883E500D63554 /* BeerDetailsHostingController.swift */; };
+		A879C7A728C884A800D63554 /* BeerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879C7A628C884A800D63554 /* BeerDetailsView.swift */; };
+		A879C7AA28C888BA00D63554 /* BeerDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879C7A928C888BA00D63554 /* BeerDetailsViewModel.swift */; };
+		A879C7AC28C88B3E00D63554 /* BeerDetailsHostingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A879C7AB28C88B3E00D63554 /* BeerDetailsHostingController.xib */; };
+		A879C7AE28C8911000D63554 /* BeerDetailsAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879C7AD28C8911000D63554 /* BeerDetailsAcceptanceTests.swift */; };
+		A879C7B028C8926B00D63554 /* XCTest+AcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879C7AF28C8926B00D63554 /* XCTest+AcceptanceTests.swift */; };
+		A879C7B428C8BB3400D63554 /* IngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879C7B328C8BB3400D63554 /* IngredientView.swift */; };
+		A879C7B628C8BB9100D63554 /* Colors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879C7B528C8BB9100D63554 /* Colors+Extension.swift */; };
+		A879C7B928C92B8400D63554 /* BeerDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879C7B828C92B8400D63554 /* BeerDetailsPresenter.swift */; };
+		A879C7BB28C92C5100D63554 /* BeerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879C7BA28C92C5100D63554 /* BeerHeaderView.swift */; };
+		A879C7BD28C92D9300D63554 /* BeerIngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A879C7BC28C92D9300D63554 /* BeerIngredientsView.swift */; };
+		A8E7942828B81A1B00BA2B2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7942728B81A1B00BA2B2C /* AppDelegate.swift */; };
+		A8E7942A28B81A1B00BA2B2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7942928B81A1B00BA2B2C /* SceneDelegate.swift */; };
+		A8E7942C28B81A1B00BA2B2C /* BeersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7942B28B81A1B00BA2B2C /* BeersListViewController.swift */; };
+		A8E7942F28B81A1B00BA2B2C /* Beers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E7942D28B81A1B00BA2B2C /* Beers.storyboard */; };
+		A8E7943128B81A1C00BA2B2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8E7943028B81A1C00BA2B2C /* Assets.xcassets */; };
+		A8E7943428B81A1C00BA2B2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E7943228B81A1C00BA2B2C /* LaunchScreen.storyboard */; };
+		A8E7943F28B81A1C00BA2B2C /* BeersUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7943E28B81A1C00BA2B2C /* BeersUIIntegrationTests.swift */; };
+		A8E7945A28B8AB3500BA2B2C /* BeerPackage in Frameworks */ = {isa = PBXBuildFile; productRef = A8E7945928B8AB3500BA2B2C /* BeerPackage */; };
+		A8E7946128B8B35600BA2B2C /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7946028B8B35600BA2B2C /* XCTestCase+MemoryLeakTracking.swift */; };
+		A8E7946328B8B5A500BA2B2C /* SharedHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7946228B8B5A500BA2B2C /* SharedHelpers.swift */; };
+		A8E7946728B8C4D300BA2B2C /* BeersViewController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7946628B8C4D300BA2B2C /* BeersViewController+Helpers.swift */; };
+		A8E7946928B8C61700BA2B2C /* UIRefreshControl+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7946828B8C61700BA2B2C /* UIRefreshControl+Helpers.swift */; };
+		A8E7946B28B8C63500BA2B2C /* UIControl+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7946A28B8C63500BA2B2C /* UIControl+Helpers.swift */; };
+		A8E7947028B92DAA00BA2B2C /* BeersUIIntegrationTests+Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7946F28B92DAA00BA2B2C /* BeersUIIntegrationTests+Assertions.swift */; };
+		A8E7947228B92EC300BA2B2C /* BeerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7947128B92EC300BA2B2C /* BeerCell.swift */; };
+		A8E7947428B9603400BA2B2C /* BeerCell+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7947328B9603400BA2B2C /* BeerCell+TestHelpers.swift */; };
+		A8E7947628B9631000BA2B2C /* BeerCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7947528B9631000BA2B2C /* BeerCellController.swift */; };
+		A8E7947928B967A000BA2B2C /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7947828B967A000BA2B2C /* UITableView+Dequeue.swift */; };
+		A8E7947B28B96C0500BA2B2C /* Combine+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7947A28B96C0500BA2B2C /* Combine+Extensions.swift */; };
+		A8E7947D28B96D3E00BA2B2C /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7947C28B96D3E00BA2B2C /* ErrorView.swift */; };
+		A8E7947F28BC105600BA2B2C /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7947E28BC105600BA2B2C /* CombineHelpers.swift */; };
+		A8E7948128BC14ED00BA2B2C /* UIImage+Heleprs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7948028BC14ED00BA2B2C /* UIImage+Heleprs.swift */; };
+		A8E7948328BC17AA00BA2B2C /* LoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7948228BC17A900BA2B2C /* LoaderSpy.swift */; };
+		A8E7948528BC17D100BA2B2C /* UITableView+Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7948428BC17D100BA2B2C /* UITableView+Header.swift */; };
+		A8E7948828BC181100BA2B2C /* BeersUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7948728BC181100BA2B2C /* BeersUIComposer.swift */; };
+		A8E7948A28BC9D5000BA2B2C /* BeersSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7948928BC9D5000BA2B2C /* BeersSnapshotTests.swift */; };
+		A8E7948C28BC9E0900BA2B2C /* XCTest+Snapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7948B28BC9E0900BA2B2C /* XCTest+Snapshots.swift */; };
+		A8E7948E28BC9E4800BA2B2C /* UIViewController+Snapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7948D28BC9E4800BA2B2C /* UIViewController+Snapshots.swift */; };
+		A8E7949128BCA9E100BA2B2C /* BeersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7949028BCA9E100BA2B2C /* BeersRepository.swift */; };
+		A8E7949428BCC77B00BA2B2C /* BeersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7949328BCC77B00BA2B2C /* BeersPresenter.swift */; };
+		A8E7949728BCC8CD00BA2B2C /* BeersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7949628BCC8CD00BA2B2C /* BeersViewModel.swift */; };
+		A8E7949928BCC94900BA2B2C /* BeersViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7949828BCC94900BA2B2C /* BeersViewAdapter.swift */; };
+		A8E7949B28BCCDF100BA2B2C /* BeersLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7949A28BCCDF100BA2B2C /* BeersLoadingViewModel.swift */; };
+		A8E7949D28BCCEB700BA2B2C /* UIRefreshControl+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7949C28BCCEB700BA2B2C /* UIRefreshControl+Helpers.swift */; };
+		A8E7949F28BCD34200BA2B2C /* BeersLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7949E28BCD34200BA2B2C /* BeersLoaderPresentationAdapter.swift */; };
+		A8E794A128BCD58D00BA2B2C /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E794A028BCD58D00BA2B2C /* WeakRefVirtualProxy.swift */; };
+		A8E794A328BCD7A100BA2B2C /* BeersErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E794A228BCD7A100BA2B2C /* BeersErrorViewModel.swift */; };
+		A8E794A528BE045C00BA2B2C /* LoadMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E794A428BE045C00BA2B2C /* LoadMoreCell.swift */; };
+		A8E794A728BE04C100BA2B2C /* LoadMoreCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E794A628BE04C100BA2B2C /* LoadMoreCellController.swift */; };
+		A8E794A928BE0A8700BA2B2C /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E794A828BE0A8700BA2B2C /* CellController.swift */; };
+		A8E794BB28BE3FAA00BA2B2C /* BEERS_WITH_LOAD_MORE_INDICATOR.png in Resources */ = {isa = PBXBuildFile; fileRef = A8E794B628BE3FAA00BA2B2C /* BEERS_WITH_LOAD_MORE_INDICATOR.png */; };
+		A8E794BC28BE3FAA00BA2B2C /* BEERS_WITH_LOAD_ERROR.png in Resources */ = {isa = PBXBuildFile; fileRef = A8E794B728BE3FAA00BA2B2C /* BEERS_WITH_LOAD_ERROR.png */; };
+		A8E794BD28BE3FAA00BA2B2C /* BEERS_WITH_CONTENT.png in Resources */ = {isa = PBXBuildFile; fileRef = A8E794B828BE3FAA00BA2B2C /* BEERS_WITH_CONTENT.png */; };
+		A8E794BE28BE3FAA00BA2B2C /* BEERS_WITH_CONTENT_AND_LOAD_ERROR.png in Resources */ = {isa = PBXBuildFile; fileRef = A8E794B928BE3FAA00BA2B2C /* BEERS_WITH_CONTENT_AND_LOAD_ERROR.png */; };
+		A8E794BF28BE3FAA00BA2B2C /* BEERS_WITH_LOAD_MORE_ERROR.png in Resources */ = {isa = PBXBuildFile; fileRef = A8E794BA28BE3FAA00BA2B2C /* BEERS_WITH_LOAD_MORE_ERROR.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8E7943B28B81A1C00BA2B2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8E7941C28B81A1B00BA2B2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8E7942328B81A1B00BA2B2C;
+			remoteInfo = BeersApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A879C74D28BEB76F00D63554 /* Date+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Helpers.swift"; sourceTree = "<group>"; };
+		A879C74F28BEB84900D63554 /* DateFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFilterView.swift; sourceTree = "<group>"; };
+		A879C75528BFD77100D63554 /* BeersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersViewController.swift; sourceTree = "<group>"; };
+		A879C75928C6233700D63554 /* FilteredBeersLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredBeersLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
+		A879C75D28C77E4700D63554 /* BEERS_WITH_DATE_FILTER.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BEERS_WITH_DATE_FILTER.png; sourceTree = "<group>"; };
+		A879C75F28C781C100D63554 /* UIToolbar+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIToolbar+Helpers.swift"; sourceTree = "<group>"; };
+		A879C76128C782FF00D63554 /* BeersAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersAcceptanceTests.swift; sourceTree = "<group>"; };
+		A879C76328C783BF00D63554 /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
+		A879C7A428C883E500D63554 /* BeerDetailsHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsHostingController.swift; sourceTree = "<group>"; };
+		A879C7A628C884A800D63554 /* BeerDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsView.swift; sourceTree = "<group>"; };
+		A879C7A928C888BA00D63554 /* BeerDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsViewModel.swift; sourceTree = "<group>"; };
+		A879C7AB28C88B3E00D63554 /* BeerDetailsHostingController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerDetailsHostingController.xib; sourceTree = "<group>"; };
+		A879C7AD28C8911000D63554 /* BeerDetailsAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsAcceptanceTests.swift; sourceTree = "<group>"; };
+		A879C7AF28C8926B00D63554 /* XCTest+AcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+AcceptanceTests.swift"; sourceTree = "<group>"; };
+		A879C7B328C8BB3400D63554 /* IngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientView.swift; sourceTree = "<group>"; };
+		A879C7B528C8BB9100D63554 /* Colors+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extension.swift"; sourceTree = "<group>"; };
+		A879C7B828C92B8400D63554 /* BeerDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsPresenter.swift; sourceTree = "<group>"; };
+		A879C7BA28C92C5100D63554 /* BeerHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerHeaderView.swift; sourceTree = "<group>"; };
+		A879C7BC28C92D9300D63554 /* BeerIngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerIngredientsView.swift; sourceTree = "<group>"; };
+		A879C7C028CA180100D63554 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A8E7942428B81A1B00BA2B2C /* BeersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8E7942728B81A1B00BA2B2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A8E7942928B81A1B00BA2B2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A8E7942B28B81A1B00BA2B2C /* BeersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersListViewController.swift; sourceTree = "<group>"; };
+		A8E7942E28B81A1B00BA2B2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Beers.storyboard; sourceTree = "<group>"; };
+		A8E7943028B81A1C00BA2B2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8E7943328B81A1C00BA2B2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A8E7943528B81A1C00BA2B2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8E7943A28B81A1C00BA2B2C /* BeersAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeersAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8E7943E28B81A1C00BA2B2C /* BeersUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersUIIntegrationTests.swift; sourceTree = "<group>"; };
+		A8E7946028B8B35600BA2B2C /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		A8E7946228B8B5A500BA2B2C /* SharedHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedHelpers.swift; sourceTree = "<group>"; };
+		A8E7946628B8C4D300BA2B2C /* BeersViewController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BeersViewController+Helpers.swift"; sourceTree = "<group>"; };
+		A8E7946828B8C61700BA2B2C /* UIRefreshControl+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Helpers.swift"; sourceTree = "<group>"; };
+		A8E7946A28B8C63500BA2B2C /* UIControl+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Helpers.swift"; sourceTree = "<group>"; };
+		A8E7946F28B92DAA00BA2B2C /* BeersUIIntegrationTests+Assertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BeersUIIntegrationTests+Assertions.swift"; sourceTree = "<group>"; };
+		A8E7947128B92EC300BA2B2C /* BeerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCell.swift; sourceTree = "<group>"; };
+		A8E7947328B9603400BA2B2C /* BeerCell+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BeerCell+TestHelpers.swift"; sourceTree = "<group>"; };
+		A8E7947528B9631000BA2B2C /* BeerCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCellController.swift; sourceTree = "<group>"; };
+		A8E7947828B967A000BA2B2C /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeue.swift"; sourceTree = "<group>"; };
+		A8E7947A28B96C0500BA2B2C /* Combine+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Combine+Extensions.swift"; sourceTree = "<group>"; };
+		A8E7947C28B96D3E00BA2B2C /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		A8E7947E28BC105600BA2B2C /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
+		A8E7948028BC14ED00BA2B2C /* UIImage+Heleprs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Heleprs.swift"; sourceTree = "<group>"; };
+		A8E7948228BC17A900BA2B2C /* LoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderSpy.swift; sourceTree = "<group>"; };
+		A8E7948428BC17D100BA2B2C /* UITableView+Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Header.swift"; sourceTree = "<group>"; };
+		A8E7948728BC181100BA2B2C /* BeersUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersUIComposer.swift; sourceTree = "<group>"; };
+		A8E7948928BC9D5000BA2B2C /* BeersSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersSnapshotTests.swift; sourceTree = "<group>"; };
+		A8E7948B28BC9E0900BA2B2C /* XCTest+Snapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+Snapshots.swift"; sourceTree = "<group>"; };
+		A8E7948D28BC9E4800BA2B2C /* UIViewController+Snapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Snapshots.swift"; sourceTree = "<group>"; };
+		A8E7949028BCA9E100BA2B2C /* BeersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersRepository.swift; sourceTree = "<group>"; };
+		A8E7949328BCC77B00BA2B2C /* BeersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersPresenter.swift; sourceTree = "<group>"; };
+		A8E7949628BCC8CD00BA2B2C /* BeersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersViewModel.swift; sourceTree = "<group>"; };
+		A8E7949828BCC94900BA2B2C /* BeersViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersViewAdapter.swift; sourceTree = "<group>"; };
+		A8E7949A28BCCDF100BA2B2C /* BeersLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersLoadingViewModel.swift; sourceTree = "<group>"; };
+		A8E7949C28BCCEB700BA2B2C /* UIRefreshControl+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Helpers.swift"; sourceTree = "<group>"; };
+		A8E7949E28BCD34200BA2B2C /* BeersLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
+		A8E794A028BCD58D00BA2B2C /* WeakRefVirtualProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefVirtualProxy.swift; sourceTree = "<group>"; };
+		A8E794A228BCD7A100BA2B2C /* BeersErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersErrorViewModel.swift; sourceTree = "<group>"; };
+		A8E794A428BE045C00BA2B2C /* LoadMoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreCell.swift; sourceTree = "<group>"; };
+		A8E794A628BE04C100BA2B2C /* LoadMoreCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreCellController.swift; sourceTree = "<group>"; };
+		A8E794A828BE0A8700BA2B2C /* CellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
+		A8E794B628BE3FAA00BA2B2C /* BEERS_WITH_LOAD_MORE_INDICATOR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BEERS_WITH_LOAD_MORE_INDICATOR.png; sourceTree = "<group>"; };
+		A8E794B728BE3FAA00BA2B2C /* BEERS_WITH_LOAD_ERROR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BEERS_WITH_LOAD_ERROR.png; sourceTree = "<group>"; };
+		A8E794B828BE3FAA00BA2B2C /* BEERS_WITH_CONTENT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BEERS_WITH_CONTENT.png; sourceTree = "<group>"; };
+		A8E794B928BE3FAA00BA2B2C /* BEERS_WITH_CONTENT_AND_LOAD_ERROR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BEERS_WITH_CONTENT_AND_LOAD_ERROR.png; sourceTree = "<group>"; };
+		A8E794BA28BE3FAA00BA2B2C /* BEERS_WITH_LOAD_MORE_ERROR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BEERS_WITH_LOAD_MORE_ERROR.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8E7942128B81A1B00BA2B2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E7945A28B8AB3500BA2B2C /* BeerPackage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E7943728B81A1C00BA2B2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A879C76528C7ACB400D63554 /* Beer Details Page */ = {
+			isa = PBXGroup;
+			children = (
+				A879C7A328C883D400D63554 /* Controllers */,
+				A879C7B728C8BB9800D63554 /* Helpers */,
+				A879C7A828C888A300D63554 /* Presentation */,
+				A879C7A028C8839F00D63554 /* Views */,
+			);
+			path = "Beer Details Page";
+			sourceTree = "<group>";
+		};
+		A879C76628C7ACC200D63554 /* Beer Details Page */ = {
+			isa = PBXGroup;
+			children = (
+				A879C7AD28C8911000D63554 /* BeerDetailsAcceptanceTests.swift */,
+			);
+			path = "Beer Details Page";
+			sourceTree = "<group>";
+		};
+		A879C7A028C8839F00D63554 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A879C7A628C884A800D63554 /* BeerDetailsView.swift */,
+				A879C7BA28C92C5100D63554 /* BeerHeaderView.swift */,
+				A879C7BC28C92D9300D63554 /* BeerIngredientsView.swift */,
+				A879C7B328C8BB3400D63554 /* IngredientView.swift */,
+				A879C7AB28C88B3E00D63554 /* BeerDetailsHostingController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A879C7A328C883D400D63554 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A879C7A428C883E500D63554 /* BeerDetailsHostingController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A879C7A828C888A300D63554 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A879C7B828C92B8400D63554 /* BeerDetailsPresenter.swift */,
+				A879C7A928C888BA00D63554 /* BeerDetailsViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A879C7B728C8BB9800D63554 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A879C7B528C8BB9100D63554 /* Colors+Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A8E7941B28B81A1B00BA2B2C = {
+			isa = PBXGroup;
+			children = (
+				A879C7C028CA180100D63554 /* README.md */,
+				A8E7942628B81A1B00BA2B2C /* BeersApp */,
+				A8E7943D28B81A1C00BA2B2C /* BeersAppTests */,
+				A8E7942528B81A1B00BA2B2C /* Products */,
+				A8E7945828B8AB3500BA2B2C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A8E7942528B81A1B00BA2B2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8E7942428B81A1B00BA2B2C /* BeersApp.app */,
+				A8E7943A28B81A1C00BA2B2C /* BeersAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8E7942628B81A1B00BA2B2C /* BeersApp */ = {
+			isa = PBXGroup;
+			children = (
+				A8E7943528B81A1C00BA2B2C /* Info.plist */,
+				A8E7943028B81A1C00BA2B2C /* Assets.xcassets */,
+				A879C76528C7ACB400D63554 /* Beer Details Page */,
+				A8E7945B28B8ABFD00BA2B2C /* Beers Page */,
+				A8E7947728B9678F00BA2B2C /* Helpers */,
+				A8E7945E28B8AC3300BA2B2C /* Launch */,
+			);
+			path = BeersApp;
+			sourceTree = "<group>";
+		};
+		A8E7943D28B81A1C00BA2B2C /* BeersAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A879C76628C7ACC200D63554 /* Beer Details Page */,
+				A8E7945728B8A9AC00BA2B2C /* Beers Page */,
+				A8E7945F28B8B34100BA2B2C /* Helpers */,
+			);
+			path = BeersAppTests;
+			sourceTree = "<group>";
+		};
+		A8E7945728B8A9AC00BA2B2C /* Beers Page */ = {
+			isa = PBXGroup;
+			children = (
+				A879C76128C782FF00D63554 /* BeersAcceptanceTests.swift */,
+				A8E7948928BC9D5000BA2B2C /* BeersSnapshotTests.swift */,
+				A8E7943E28B81A1C00BA2B2C /* BeersUIIntegrationTests.swift */,
+				A8E794B528BE3FAA00BA2B2C /* snapshots */,
+			);
+			path = "Beers Page";
+			sourceTree = "<group>";
+		};
+		A8E7945828B8AB3500BA2B2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8E7945B28B8ABFD00BA2B2C /* Beers Page */ = {
+			isa = PBXGroup;
+			children = (
+				A8E7948628BC17EB00BA2B2C /* Composers */,
+				A8E7945D28B8AC1900BA2B2C /* Controllers */,
+				A8E7949228BCC77000BA2B2C /* Presentation */,
+				A8E7948F28BCA9D000BA2B2C /* Repositories */,
+				A8E7949528BCC8C400BA2B2C /* ViewModels */,
+				A8E7945C28B8AC0700BA2B2C /* Views */,
+			);
+			path = "Beers Page";
+			sourceTree = "<group>";
+		};
+		A8E7945C28B8AC0700BA2B2C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A8E7947128B92EC300BA2B2C /* BeerCell.swift */,
+				A879C74F28BEB84900D63554 /* DateFilterView.swift */,
+				A8E7947C28B96D3E00BA2B2C /* ErrorView.swift */,
+				A8E794A428BE045C00BA2B2C /* LoadMoreCell.swift */,
+				A8E7942D28B81A1B00BA2B2C /* Beers.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A8E7945D28B8AC1900BA2B2C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A8E7947528B9631000BA2B2C /* BeerCellController.swift */,
+				A8E7942B28B81A1B00BA2B2C /* BeersListViewController.swift */,
+				A879C75528BFD77100D63554 /* BeersViewController.swift */,
+				A8E794A828BE0A8700BA2B2C /* CellController.swift */,
+				A8E794A628BE04C100BA2B2C /* LoadMoreCellController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A8E7945E28B8AC3300BA2B2C /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				A8E7942728B81A1B00BA2B2C /* AppDelegate.swift */,
+				A8E7942928B81A1B00BA2B2C /* SceneDelegate.swift */,
+				A8E7943228B81A1C00BA2B2C /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		A8E7945F28B8B34100BA2B2C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A8E7947328B9603400BA2B2C /* BeerCell+TestHelpers.swift */,
+				A8E7946F28B92DAA00BA2B2C /* BeersUIIntegrationTests+Assertions.swift */,
+				A8E7946628B8C4D300BA2B2C /* BeersViewController+Helpers.swift */,
+				A879C74D28BEB76F00D63554 /* Date+Helpers.swift */,
+				A879C76328C783BF00D63554 /* HTTPClientStub.swift */,
+				A8E7948228BC17A900BA2B2C /* LoaderSpy.swift */,
+				A8E7946228B8B5A500BA2B2C /* SharedHelpers.swift */,
+				A8E7946A28B8C63500BA2B2C /* UIControl+Helpers.swift */,
+				A8E7948028BC14ED00BA2B2C /* UIImage+Heleprs.swift */,
+				A8E7946828B8C61700BA2B2C /* UIRefreshControl+Helpers.swift */,
+				A879C75F28C781C100D63554 /* UIToolbar+Helpers.swift */,
+				A8E7948D28BC9E4800BA2B2C /* UIViewController+Snapshots.swift */,
+				A879C7AF28C8926B00D63554 /* XCTest+AcceptanceTests.swift */,
+				A8E7948B28BC9E0900BA2B2C /* XCTest+Snapshots.swift */,
+				A8E7946028B8B35600BA2B2C /* XCTestCase+MemoryLeakTracking.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A8E7947728B9678F00BA2B2C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A8E7947A28B96C0500BA2B2C /* Combine+Extensions.swift */,
+				A8E7947E28BC105600BA2B2C /* CombineHelpers.swift */,
+				A8E7949C28BCCEB700BA2B2C /* UIRefreshControl+Helpers.swift */,
+				A8E7947828B967A000BA2B2C /* UITableView+Dequeue.swift */,
+				A8E7948428BC17D100BA2B2C /* UITableView+Header.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A8E7948628BC17EB00BA2B2C /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+				A8E7948728BC181100BA2B2C /* BeersUIComposer.swift */,
+				A8E7949828BCC94900BA2B2C /* BeersViewAdapter.swift */,
+			);
+			path = Composers;
+			sourceTree = "<group>";
+		};
+		A8E7948F28BCA9D000BA2B2C /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A8E7949028BCA9E100BA2B2C /* BeersRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A8E7949228BCC77000BA2B2C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A8E7949E28BCD34200BA2B2C /* BeersLoaderPresentationAdapter.swift */,
+				A879C75928C6233700D63554 /* FilteredBeersLoaderPresentationAdapter.swift */,
+				A8E7949328BCC77B00BA2B2C /* BeersPresenter.swift */,
+				A8E794A028BCD58D00BA2B2C /* WeakRefVirtualProxy.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A8E7949528BCC8C400BA2B2C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A8E794A228BCD7A100BA2B2C /* BeersErrorViewModel.swift */,
+				A8E7949A28BCCDF100BA2B2C /* BeersLoadingViewModel.swift */,
+				A8E7949628BCC8CD00BA2B2C /* BeersViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A8E794B528BE3FAA00BA2B2C /* snapshots */ = {
+			isa = PBXGroup;
+			children = (
+				A8E794B928BE3FAA00BA2B2C /* BEERS_WITH_CONTENT_AND_LOAD_ERROR.png */,
+				A8E794B828BE3FAA00BA2B2C /* BEERS_WITH_CONTENT.png */,
+				A879C75D28C77E4700D63554 /* BEERS_WITH_DATE_FILTER.png */,
+				A8E794B728BE3FAA00BA2B2C /* BEERS_WITH_LOAD_ERROR.png */,
+				A8E794BA28BE3FAA00BA2B2C /* BEERS_WITH_LOAD_MORE_ERROR.png */,
+				A8E794B628BE3FAA00BA2B2C /* BEERS_WITH_LOAD_MORE_INDICATOR.png */,
+			);
+			path = snapshots;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8E7942328B81A1B00BA2B2C /* BeersApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8E7944E28B81A1C00BA2B2C /* Build configuration list for PBXNativeTarget "BeersApp" */;
+			buildPhases = (
+				A8E7942028B81A1B00BA2B2C /* Sources */,
+				A8E7942128B81A1B00BA2B2C /* Frameworks */,
+				A8E7942228B81A1B00BA2B2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeersApp;
+			packageProductDependencies = (
+				A8E7945928B8AB3500BA2B2C /* BeerPackage */,
+			);
+			productName = BeersApp;
+			productReference = A8E7942428B81A1B00BA2B2C /* BeersApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8E7943928B81A1C00BA2B2C /* BeersAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8E7945128B81A1C00BA2B2C /* Build configuration list for PBXNativeTarget "BeersAppTests" */;
+			buildPhases = (
+				A8E7943628B81A1C00BA2B2C /* Sources */,
+				A8E7943728B81A1C00BA2B2C /* Frameworks */,
+				A8E7943828B81A1C00BA2B2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8E7943C28B81A1C00BA2B2C /* PBXTargetDependency */,
+			);
+			name = BeersAppTests;
+			productName = BeersAppTests;
+			productReference = A8E7943A28B81A1C00BA2B2C /* BeersAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8E7941C28B81A1B00BA2B2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					A8E7942328B81A1B00BA2B2C = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					A8E7943928B81A1C00BA2B2C = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = A8E7942328B81A1B00BA2B2C;
+					};
+				};
+			};
+			buildConfigurationList = A8E7941F28B81A1B00BA2B2C /* Build configuration list for PBXProject "BeersApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8E7941B28B81A1B00BA2B2C;
+			productRefGroup = A8E7942528B81A1B00BA2B2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8E7942328B81A1B00BA2B2C /* BeersApp */,
+				A8E7943928B81A1C00BA2B2C /* BeersAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8E7942228B81A1B00BA2B2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E7943428B81A1C00BA2B2C /* LaunchScreen.storyboard in Resources */,
+				A879C7AC28C88B3E00D63554 /* BeerDetailsHostingController.xib in Resources */,
+				A8E7943128B81A1C00BA2B2C /* Assets.xcassets in Resources */,
+				A8E7942F28B81A1B00BA2B2C /* Beers.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E7943828B81A1C00BA2B2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E794BF28BE3FAA00BA2B2C /* BEERS_WITH_LOAD_MORE_ERROR.png in Resources */,
+				A8E794BE28BE3FAA00BA2B2C /* BEERS_WITH_CONTENT_AND_LOAD_ERROR.png in Resources */,
+				A8E794BD28BE3FAA00BA2B2C /* BEERS_WITH_CONTENT.png in Resources */,
+				A8E794BC28BE3FAA00BA2B2C /* BEERS_WITH_LOAD_ERROR.png in Resources */,
+				A8E794BB28BE3FAA00BA2B2C /* BEERS_WITH_LOAD_MORE_INDICATOR.png in Resources */,
+				A879C75E28C77E4800D63554 /* BEERS_WITH_DATE_FILTER.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8E7942028B81A1B00BA2B2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E7947228B92EC300BA2B2C /* BeerCell.swift in Sources */,
+				A879C7B428C8BB3400D63554 /* IngredientView.swift in Sources */,
+				A8E7942C28B81A1B00BA2B2C /* BeersListViewController.swift in Sources */,
+				A879C75A28C6233700D63554 /* FilteredBeersLoaderPresentationAdapter.swift in Sources */,
+				A8E7942828B81A1B00BA2B2C /* AppDelegate.swift in Sources */,
+				A879C75028BEB84900D63554 /* DateFilterView.swift in Sources */,
+				A879C75628BFD77100D63554 /* BeersViewController.swift in Sources */,
+				A8E7949F28BCD34200BA2B2C /* BeersLoaderPresentationAdapter.swift in Sources */,
+				A8E7948528BC17D100BA2B2C /* UITableView+Header.swift in Sources */,
+				A8E7949728BCC8CD00BA2B2C /* BeersViewModel.swift in Sources */,
+				A8E7947F28BC105600BA2B2C /* CombineHelpers.swift in Sources */,
+				A879C7BD28C92D9300D63554 /* BeerIngredientsView.swift in Sources */,
+				A8E7947628B9631000BA2B2C /* BeerCellController.swift in Sources */,
+				A879C7A728C884A800D63554 /* BeerDetailsView.swift in Sources */,
+				A879C7BB28C92C5100D63554 /* BeerHeaderView.swift in Sources */,
+				A8E7947928B967A000BA2B2C /* UITableView+Dequeue.swift in Sources */,
+				A8E7942A28B81A1B00BA2B2C /* SceneDelegate.swift in Sources */,
+				A8E7947D28B96D3E00BA2B2C /* ErrorView.swift in Sources */,
+				A8E794A928BE0A8700BA2B2C /* CellController.swift in Sources */,
+				A879C7B928C92B8400D63554 /* BeerDetailsPresenter.swift in Sources */,
+				A879C7A528C883E500D63554 /* BeerDetailsHostingController.swift in Sources */,
+				A8E7949B28BCCDF100BA2B2C /* BeersLoadingViewModel.swift in Sources */,
+				A8E7947B28B96C0500BA2B2C /* Combine+Extensions.swift in Sources */,
+				A8E7949128BCA9E100BA2B2C /* BeersRepository.swift in Sources */,
+				A8E7949428BCC77B00BA2B2C /* BeersPresenter.swift in Sources */,
+				A8E794A528BE045C00BA2B2C /* LoadMoreCell.swift in Sources */,
+				A879C7B628C8BB9100D63554 /* Colors+Extension.swift in Sources */,
+				A8E794A728BE04C100BA2B2C /* LoadMoreCellController.swift in Sources */,
+				A8E7949D28BCCEB700BA2B2C /* UIRefreshControl+Helpers.swift in Sources */,
+				A879C7AA28C888BA00D63554 /* BeerDetailsViewModel.swift in Sources */,
+				A8E7949928BCC94900BA2B2C /* BeersViewAdapter.swift in Sources */,
+				A8E794A128BCD58D00BA2B2C /* WeakRefVirtualProxy.swift in Sources */,
+				A8E7948828BC181100BA2B2C /* BeersUIComposer.swift in Sources */,
+				A8E794A328BCD7A100BA2B2C /* BeersErrorViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E7943628B81A1C00BA2B2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A879C7AE28C8911000D63554 /* BeerDetailsAcceptanceTests.swift in Sources */,
+				A879C76228C782FF00D63554 /* BeersAcceptanceTests.swift in Sources */,
+				A8E7943F28B81A1C00BA2B2C /* BeersUIIntegrationTests.swift in Sources */,
+				A8E7947428B9603400BA2B2C /* BeerCell+TestHelpers.swift in Sources */,
+				A879C76028C781C100D63554 /* UIToolbar+Helpers.swift in Sources */,
+				A8E7948128BC14ED00BA2B2C /* UIImage+Heleprs.swift in Sources */,
+				A8E7948A28BC9D5000BA2B2C /* BeersSnapshotTests.swift in Sources */,
+				A8E7947028B92DAA00BA2B2C /* BeersUIIntegrationTests+Assertions.swift in Sources */,
+				A8E7946928B8C61700BA2B2C /* UIRefreshControl+Helpers.swift in Sources */,
+				A8E7948C28BC9E0900BA2B2C /* XCTest+Snapshots.swift in Sources */,
+				A8E7946128B8B35600BA2B2C /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				A879C7B028C8926B00D63554 /* XCTest+AcceptanceTests.swift in Sources */,
+				A8E7946728B8C4D300BA2B2C /* BeersViewController+Helpers.swift in Sources */,
+				A879C74E28BEB76F00D63554 /* Date+Helpers.swift in Sources */,
+				A879C76428C783BF00D63554 /* HTTPClientStub.swift in Sources */,
+				A8E7948328BC17AA00BA2B2C /* LoaderSpy.swift in Sources */,
+				A8E7946328B8B5A500BA2B2C /* SharedHelpers.swift in Sources */,
+				A8E7948E28BC9E4800BA2B2C /* UIViewController+Snapshots.swift in Sources */,
+				A8E7946B28B8C63500BA2B2C /* UIControl+Helpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8E7943C28B81A1C00BA2B2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8E7942328B81A1B00BA2B2C /* BeersApp */;
+			targetProxy = A8E7943B28B81A1C00BA2B2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A8E7942D28B81A1B00BA2B2C /* Beers.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8E7942E28B81A1B00BA2B2C /* Base */,
+			);
+			name = Beers.storyboard;
+			sourceTree = "<group>";
+		};
+		A8E7943228B81A1C00BA2B2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8E7943328B81A1C00BA2B2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8E7944C28B81A1C00BA2B2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8E7944D28B81A1C00BA2B2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8E7944F28B81A1C00BA2B2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GH7UH23B4Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BeersApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pasini.BeersApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8E7945028B81A1C00BA2B2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GH7UH23B4Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BeersApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pasini.BeersApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A8E7945228B81A1C00BA2B2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GH7UH23B4Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pasini.BeersAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeersApp.app/BeersApp";
+			};
+			name = Debug;
+		};
+		A8E7945328B81A1C00BA2B2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GH7UH23B4Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pasini.BeersAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeersApp.app/BeersApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8E7941F28B81A1B00BA2B2C /* Build configuration list for PBXProject "BeersApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8E7944C28B81A1C00BA2B2C /* Debug */,
+				A8E7944D28B81A1C00BA2B2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8E7944E28B81A1C00BA2B2C /* Build configuration list for PBXNativeTarget "BeersApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8E7944F28B81A1C00BA2B2C /* Debug */,
+				A8E7945028B81A1C00BA2B2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8E7945128B81A1C00BA2B2C /* Build configuration list for PBXNativeTarget "BeersAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8E7945228B81A1C00BA2B2C /* Debug */,
+				A8E7945328B81A1C00BA2B2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A8E7945928B8AB3500BA2B2C /* BeerPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BeerPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A8E7941C28B81A1B00BA2B2C /* Project object */;
+}
